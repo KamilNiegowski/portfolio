@@ -134,6 +134,7 @@
                 </div>
             </div>
         </div>
-        @vite('resources/js/app.js')
+        <script src="{{ Vite::asset('resources/js/app.js') }}"></script>
+{{--        @vite('resources/js/app.js')--}}
     </body>
 </html>
