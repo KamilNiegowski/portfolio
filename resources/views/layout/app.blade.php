@@ -9,11 +9,12 @@
     <!-- Fonts -->
     <link href="{{Vite::asset('resources/css/app.css')}}" rel="stylesheet">
 </head>
-<body class="antialiased">
-<x-layout.navbar></x-layout.navbar>
-{{$slot}}
-
-<footer>footer</footer>
+<body class="antialiased text-gray-800 dark:text-white">
+<div class="min-h-screen bg-gray-100 dark:bg-slate-800 pt-24">
+    <x-layout.navbar></x-layout.navbar>
+    {{$slot}}
+    <x-layout.footer></x-layout.footer>
+</div>
 <script src="{{ Vite::asset('resources/js/app.js') }}"></script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode:'class',
+  darkMode: 'class',
   content: [
-      './storage/framework/views/*.php',
-      './resources/**/*.blade.php',
-      './resources/**/*.js',
-      './resources/**/*.vue',
+    './storage/framework/views/*.php',
+    './resources/**/*.blade.php',
+    './resources/**/*.js',
+    './resources/**/*.vue',
   ],
   theme: {
     extend: {},
