@@ -2,7 +2,7 @@
     <a
         href="https://www.facebook.com/kamil.niegowski1/"
         target="_blank"
-        class="w-10 h-10 flex items-center justify-center rounded-full border border-1 border-dark dark:border-white text-dark dark:text-white hover:text-white hover:bg-primary hover:border-primary hover:dark:border-primary mr-3 sm:mr-4 lg:mr-3 xl:mr-4"
+        class="w-10 h-10 flex items-center justify-center rounded-full border border-1 border-dark dark:border-white text-dark dark:text-white hover:text-white hover:bg-[#4267B2] hover:border-[#4267B2] hover:dark:border-[#4267B2] mr-3 sm:mr-4 lg:mr-3 xl:mr-4"
     >
         <svg
             width="10"
@@ -18,7 +18,7 @@
     <a
         href="https://twitter.com/KamilNiegowski"
         target="_blank"
-        class="w-10 h-10 flex items-center justify-center rounded-full border border-1 border-dark dark:border-white text-dark dark:text-white hover:text-white hover:bg-primary hover:border-primary hover:dark:border-primary mr-3 sm:mr-4 lg:mr-3 xl:mr-4"
+        class="w-10 h-10 flex items-center justify-center rounded-full border border-1 border-dark dark:border-white text-dark dark:text-white hover:text-white hover:bg-[#1DA1F2] hover:border-[#1DA1F2] hover:dark:border-[#1DA1F2] mr-3 sm:mr-4 lg:mr-3 xl:mr-4"
     >
         <svg
             width="16"
@@ -34,7 +34,7 @@
     <a
         href="https://github.com/KamilNiegowski"
         target="_blank"
-        class="w-10 h-10 flex items-center justify-center rounded-full border border-1 border-dark dark:border-white text-dark dark:text-white hover:text-white hover:bg-primary hover:border-primary hover:dark:border-primary mr-3 sm:mr-4 lg:mr-3 xl:mr-4"
+        class="w-10 h-10 flex items-center justify-center rounded-full border border-1 border-dark dark:border-white text-dark dark:text-white hover:text-white hover:bg-[#161b22] hover:border-[#161b22] hover:dark:border-[#161b22] mr-3 sm:mr-4 lg:mr-3 xl:mr-4"
     >
         <svg
             width="20"
@@ -49,7 +49,7 @@
     <a
         href="https://www.linkedin.com/in/kamil-n-6b5293235/"
         target="_blank"
-        class="w-10 h-10 flex items-center justify-center rounded-full border border-1 border-dark dark:border-white text-dark dark:text-white hover:text-white hover:bg-primary hover:border-primary hover:dark:border-primary mr-3 sm:mr-4 lg:mr-3 xl:mr-4"
+        class="w-10 h-10 flex items-center justify-center rounded-full border border-1 border-dark dark:border-white text-dark dark:text-white hover:text-white hover:bg-[#0e76a8] hover:border-[#0e76a8] hover:dark:border-[#0e76a8] mr-3 sm:mr-4 lg:mr-3 xl:mr-4"
     >
         <svg
             width="14"

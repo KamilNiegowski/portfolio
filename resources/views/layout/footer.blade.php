@@ -1,5 +1,5 @@
 <!-- ====== Navbar Section Start-->
-<footer class="bg-gray-200 dark:bg-slate-800 py-8 relative z-10">
+<footer class="bg-gray-300 dark:bg-slate-900 py-8 relative z-10">
     <div class="container">
         <div class="flex flex-wrap justify-between">
             <span class="inline-flex items-center text-xl">
@@ -12,7 +12,7 @@
         <span class="absolute left-0 bottom-0 z-[-1]">
               <svg
                   width="217"
-                  height="229"
+                  height="200"
                   viewBox="0 0 217 229"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

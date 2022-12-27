@@ -1,7 +1,7 @@
 <!-- ====== Navbar Section Start -->
 <header
     x-data="{navbarOpen: false}"
-    class="fixed left-0 top-0 z-50 bg-white w-full flex items-center shadow-md dark:bg-slate-800 h-24"
+    class="fixed left-0 top-0 z-50 bg-white w-full flex items-center shadow-md dark:bg-slate-900 h-24"
 >
     <div class="container">
         <div class="flex -mx-4 items-center justify-between relative">
@@ -23,7 +23,7 @@
                     <nav
                         :class="!navbarOpen && 'hidden'"
                         id="navbarCollapse"
-                        class="absolute right-0 top-full bg-white py-5 px-6 z-50 shadow rounded-lg w-full dark:bg-slate-800 dark:text-white lg:px-0 lg:max-w-full lg:w-full lg:right-4 lg:block lg:static lg:shadow-none"
+                        class="absolute right-0 top-full bg-white py-5 px-6 z-50 shadow rounded-lg w-full dark:bg-slate-900 dark:text-white lg:px-0 lg:max-w-full lg:w-full lg:right-4 lg:block lg:static lg:shadow-none"
                     >
                         <ul class="block lg:flex lg:items-center">
                             @foreach($navigationItems as $item)
