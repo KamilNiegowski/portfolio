@@ -10,7 +10,7 @@
                     </h1>
                     <p class="text-base mb-8 max-w-[520px]">
                         Jestem studentem na drugim roku informatyki<br>
-                        Lubię rozwijać swoję umiejętności programistyczne
+                        Lubię codziennie rozwijać swoję umiejętności programistyczne
                     </p>
                     <ul class="flex flex-wrap items-center">
                         <li>

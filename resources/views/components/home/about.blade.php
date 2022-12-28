@@ -33,8 +33,8 @@
             <div class="w-full lg:w-1/2 xl:w-5/12 px-4">
                 <div class="mt-10 lg:mt-0">
                     <span class="font-semibold text-lg text-primary mb-2 block">
-                        <blockquote class="text-sm text-gray-500 italic py-2 px-3 border-l-4 border-amber-500">
-                            "Wszystko jest osiągalne z ciężką pracą"
+                        <blockquote class="text-sm text-[#9ca3af] italic py-2 px-3 border-l-4 border-amber-500">
+                            "Wszystko jest osiągalne dzięki ciężkiej pracy"
                         </blockquote>
                     </span>
                     <h2 class="font-bold text-3xl sm:text-4xl dark:text-gray-200 mb-8">
