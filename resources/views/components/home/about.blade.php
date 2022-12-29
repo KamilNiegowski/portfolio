@@ -7,25 +7,28 @@
                     <div class="w-full xl:w-1/2 px-3 sm:-mx-4">
                         <div class="py-3 sm:py-4">
                             <img
-                                src="{{ url('/img/me1.png') }}"
+                                src="{{ url('/img/me.jpeg') }}"
                                 alt=""
                                 class="rounded-2xl w-full"
                             />
                         </div>
                         <div class="py-3 sm:py-4">
                             <img
-                                src="{{ url('/img/me3.png') }}"
+                                src="{{ url('/img/me.jpeg') }}"
                                 alt=""
                                 class="rounded-2xl w-full"
                             />
                         </div>
-                        <div class="py-3 sm:py-4">
+                    </div>
+                    <div class="w-full xl:w-1/2 px-3 sm:px-4">
+                        <div class="my-4 relative z-10">
                             <img
-                                src="{{ url('/img/me2.png') }}"
+                                src="{{ url('/img/me.jpeg') }}"
                                 alt=""
                                 class="rounded-2xl w-full"
                             />
                             <x-about-dots></x-about-dots>
+
                         </div>
                     </div>
                 </div>

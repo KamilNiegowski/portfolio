@@ -21,38 +21,38 @@
         {
             $this->items = [
                 [
-                    'category' => ['Laravel', 'Tailwindcss', 'PHP'],
+                    'category' => [ 'Laravel', 'Tailwind.css', 'PHP' ],
                     'title' => 'Moja strona portfolio w Laravel',
-                    'image' => url('/img/portfolio.png'),
+                    'image' => url( '/img/laravel.png' ),
                     'github' => 'https://github.com/KamilNiegowski/portfolio'
                 ],
                 [
-                    'category' => ['TotalCommander', 'C#'],
+                    'category' => [ 'TotalCommander', 'C#' ],
                     'title' => "A'la TotalCommander",
-                    'image' => url('/img/portfolio.png'),
+                    'image' => url( '/img/total_commander.png' ),
                     'github' => 'https://github.com/KamilNiegowski/TotalCommander'
                 ],
                 [
-                    'category' => ['JavaScript', 'jQuery'],
+                    'category' => [ 'JavaScript', 'jQuery' ],
                     'title' => 'Dynamiczny akordeon wykonany w jQuery',
-                    'image' => url('/img/portfolio.png'),
+                    'image' => url( '/img/jquery.png' ),
                     'github' => 'https://github.com/KamilNiegowski/jQuery_accordion'
                 ],
                 [
-                    'category' => ['C++', 'Arduino'],
-                    'title' => 'Radar wykonany w arduino',
-                    'image' => url('/img/portfolio.png'),
+                    'category' => [ 'C++', 'Arduino' ],
+                    'title' => 'Radar wykonany w Arduino',
+                    'image' => url( '/img/arduino_radar.png' ),
                     'github' => 'https://github.com/KamilNiegowski/radar_arduino'
                 ],
                 [
-                    'category' => ['Python'],
-                    'title' => 'Bot zmieniający alt tagi zdjęć',
-                    'image' => url('/img/portfolio.png'),
+                    'category' => [ 'Python' ],
+                    'title' => 'Bot zmieniający alt-tagi zdjęć',
+                    'image' => url( '/img/python.png' ),
                     'github' => 'https://github.com/KamilNiegowski/change_alt_images'
                 ],
             ];
 
-            $this->tabs = array_unique(Arr::flatten(Arr::pluck($this->items, 'category')));
+            $this->tabs = array_unique( Arr::flatten( Arr::pluck( $this->items, 'category' ) ) );
         }
 
         /**
@@ -62,6 +62,6 @@
          */
         public function render()
         {
-            return view('components.home.portfolio');
+            return view( 'components.home.portfolio' );
         }
     }
