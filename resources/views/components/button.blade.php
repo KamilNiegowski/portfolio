@@ -9,7 +9,6 @@
             'bg-primary border-primary text-white hover:bg-opacity-80' => $variant === 'primary',
 
         ])
-
     }}>
     {{$slot}}
 </button>

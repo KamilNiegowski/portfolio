@@ -6,8 +6,14 @@ module.exports = {
     './resources/**/*.blade.php',
     './resources/**/*.js',
     './resources/**/*.vue',
+    './src/**/*.{html,js}',
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
+    extend: {},
+  },
+  variants: {
     extend: {},
   },
   plugins: [require("./plugin")],

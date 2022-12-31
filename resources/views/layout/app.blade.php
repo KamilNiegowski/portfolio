@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Laravel</title>
-    <meta name="csrf-token" content="{{csrf_token()}}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
 
     <!-- Fonts -->
     <link href="{{Vite::asset('resources/css/app.css')}}" rel="stylesheet">

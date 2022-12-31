@@ -20,7 +20,7 @@
                         </li>
                     </ul>
                     <div class="clients pt-16">
-                        <h6 class="font-normal text-xs flex items-center text-body-color dark:bg-gray-300 mb-4">
+                        <h6 class="font-normal text-normal flex items-center text-body-color  mb-4">
                             Obserwuj mnie w mediach społecznościowych
                             <span class="w-8 h-[-1px] bg-body-color lg:inline-blockml-2"></span>
                         </h6>
