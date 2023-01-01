@@ -116,7 +116,7 @@
                                            x-model="formData.name"
                                            ::class="errors.name ? 'border-red-500 focus:border-red-500' : ''"></x-forms.input>
                             <template x-if="errors.name">
-                                <div x-text="errors.name[0]" class="text-red-500"></div>
+                                <div class="text-red-500">Wypełnij pole z imieniem</div>
                             </template>
                         </div>
                         <div class="mb-6">
@@ -126,7 +126,7 @@
                                            x-model="formData.email"
                                            ::class="errors.email ? 'border-red-500 focus:border-red-500' : ''"></x-forms.input>
                             <template x-if="errors.email">
-                                <div x-text="errors.email[0]" class="text-red-500"></div>
+                                <div class="text-red-500">Wpisz poprawny adres email</div>
                             </template>
                         </div>
                         <div class=mb-6">
@@ -136,7 +136,7 @@
                                               x-model="formData.message"
                                               ::class="errors.message ? 'border-red-500 focus:border-red-500' : ''"></x-forms.textarea>
                             <template x-if="errors.message">
-                                <div x-text="errors.message[0]" class="text-red-500"></div>
+                                <div class="text-red-500">Wypełnij pole z wiadomością</div>
                             </template>
                         </div>
                         <div>
