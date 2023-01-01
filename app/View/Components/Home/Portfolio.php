@@ -22,7 +22,7 @@
             $this->items = [
                 [
                     'category' => [ 'Laravel', 'Tailwind.css', 'PHP' ],
-                    'title' => 'Moja strona portfolio w Laravel',
+                    'title' => 'Strona portfolio w Laravel',
                     'image' => url( '/img/laravel.png' ),
                     'github' => 'https://github.com/KamilNiegowski/portfolio'
                 ],
