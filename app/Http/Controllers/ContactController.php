@@ -10,7 +10,7 @@
     {
         public function submit( Request $request ): array
         {
-            $request->validate( [
+            $validate = $request->validate( [
                 'name' => 'required',
                 'email' => [ 'required', 'email' ],
                 'message' => 'required',
