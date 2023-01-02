@@ -18,7 +18,7 @@
         public function __construct()
         {
             $this->navigationItems = [
-                [ 'label' => 'Strona główna', 'href' => '/' ],
+                [ 'label' => 'Główna', 'href' => '/' ],
                 [ 'label' => 'O mnie', 'href' => '#about' ],
                 [ 'label' => 'Projekty', 'href' => '#portfolio' ],
                 [ 'label' => 'Kontakt', 'href' => '#contact' ]
