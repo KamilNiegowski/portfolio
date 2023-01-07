@@ -1,8 +1,9 @@
 <?php
-
+    
     use App\Http\Controllers\ContactController;
+    use App\Http\Controllers\CurrencyController;
     use Illuminate\Support\Facades\Route;
-
+    
     /*
     |--------------------------------------------------------------------------
     | Web Routes
@@ -13,8 +14,10 @@
     | contains the "web" middleware group. Now create something great!
     |
     */
-
+    
     Route::get( '/', function () {
         return view( 'home' );
     } );
     Route::post( '/contact/submit', [ ContactController::class, 'submit' ] );
+    Route::get( '/kursy-walut', [ CurrencyController::class, 'AddCurrencyToDB' ] );
+
