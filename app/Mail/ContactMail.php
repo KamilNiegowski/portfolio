@@ -31,13 +31,13 @@
         public function envelope()
         {
             return new Envelope(
-                subject: 'Contact Mail',
+                subject: 'Mail kontaktowy',
             );
         }
 
         public function build(): ContactMail
         {
-            return $this->subject( 'Contact mail from my WebSite' )->replyTo( $this->email )->view( 'email.contact' );
+            return $this->subject( 'Kontakt ze strony internetowej' )->replyTo( $this->email )->view( 'email.contact' );
         }
 
         /**
