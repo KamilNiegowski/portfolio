@@ -29,7 +29,7 @@ services:
             - mailhog
             - selenium
     mysql:
-      image: 'mysql/mysql-server:latest'
+        image: 'mysql/mysql-server:latest'
         ports:
             - '${FORWARD_DB_PORT:-3306}:3306'
         environment:
@@ -45,7 +45,7 @@ services:
         networks:
             - sail
         healthcheck:
-            test: ["CMD", "mysqladmin", "ping", "-p${DB_PASSWORD}"]
+            test: [ "CMD", "mysqladmin", "ping", "-p${DB_PASSWORD}" ]
             retries: 3
             timeout: 5s
     phpmyadmin:
