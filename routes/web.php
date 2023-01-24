@@ -19,5 +19,5 @@
         return view( 'home' );
     } );
     Route::post( '/contact/submit', [ ContactController::class, 'submit' ] );
-    Route::get( '/kursy-walut', [ CurrencyController::class, 'AddCurrencyToDB' ] );
+    Route::get( '/kursy-walut', [ CurrencyController::class, 'ViewCurrency' ] );
 
