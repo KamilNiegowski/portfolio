@@ -5,7 +5,7 @@
 - `git clone https://github.com/KamilNiegowski/portfolio.git laravel-project`
 - `cd laravel-project && chmod +x docker-compose/running-site.sh`
 - `cp .env.example .env`
-- `docker compose up -d --build`
+- `docker compose -f docker-compose-DEV.yml up -d --build`
 
 Now that all the containers are ready, we can go in the browser to the address: `localhost`
 
