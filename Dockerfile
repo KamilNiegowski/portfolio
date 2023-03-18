@@ -25,6 +25,6 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 RUN groupadd -g 1000 www
 RUN useradd -u 1000 -ms /bin/bash -g www www
-
+123
 USER www
 ENTRYPOINT ["docker-compose/running-site.sh"]
