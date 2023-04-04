@@ -7,6 +7,8 @@
 
     class CurrencyController extends Controller
     {
+        private $apiData;
+        
         public function ViewCurrency( Currency $currency )
         {
             $this->AddCurrencyToDB();
@@ -16,8 +18,7 @@
         
         public function AddCurrencyToDB()
         {
-            $rates = $this->ConnectApi();
-            //Wykonywane dla każdego kursu waluty
+            $rates = $this->getApiData();
             foreach ( $rates as $rate ) {
                 $currency = Currency::where( 'currency_code', $rate[ 'code' ] )->first();
                 
@@ -35,23 +36,28 @@
             return $currency;
         }
         
+        private function getApiData()
+        {
+            if ( !$this->apiData ) {
+                $this->ConnectApi();
+            }
+            return $this->apiData;
+        }
+        
         public function ConnectApi()
         {
-            //Adres URL do API NBP
             $api_url = 'https://api.nbp.pl/api/exchangerates/tables/a';
             
-            //Obiekt klienta Guzzle
             $client = new Client();
             
-            //Zapytanie Get do Api
             $response = $client->request( 'Get', $api_url, [
                 'query' => [
                     'format' => 'json',
                 ],
             ] );
             
-            //pobranie odpowiedzi z Api i zamiana na tablice php
             $data = json_decode( $response->getBody(), true );
-            return $data[ 0 ][ 'rates' ];
+            $this->apiData = $data[ 0 ][ 'rates' ];
+            return $this->apiData;
         }
     }
