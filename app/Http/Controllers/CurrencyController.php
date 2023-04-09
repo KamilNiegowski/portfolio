@@ -13,6 +13,7 @@
             return view( 'components.currency.currency', [ 'currencies' => $currencies ] );
         }
         
+        
         public function AddCurrencyToDB()
         {
             $rates = ConnectApi::ConnectApi( 'https://api.nbp.pl/api/exchangerates/tables/a' );
