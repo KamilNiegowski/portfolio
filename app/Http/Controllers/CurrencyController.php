@@ -15,7 +15,6 @@
         
         public function AddCurrencyToDB()
         {
-            
             $rates = $this->getApiData();
             
             foreach ( $rates as $rate ) {
