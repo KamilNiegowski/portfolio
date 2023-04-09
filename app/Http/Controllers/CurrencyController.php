@@ -3,7 +3,8 @@
     namespace App\Http\Controllers;
     
     use App\Models\Currency;
-    
+    use GuzzleHttp\Client;
+
     class CurrencyController extends Controller
     {
         public function ViewCurrency( Currency $currency )

@@ -19,10 +19,10 @@
         {
             $this->navigationItems = [
                 [ 'label' => 'Główna', 'href' => '/' ],
-                [ 'label' => 'O mnie', 'href' => '#about' ],
-                [ 'label' => 'Projekty', 'href' => '#portfolio' ],
+                [ 'label' => 'O mnie', 'href' => '/#about' ],
+                [ 'label' => 'Projekty', 'href' => '/#portfolio' ],
                 [ 'label' => 'Kursy walut', 'href' => '/kursy-walut' ],
-                [ 'label' => 'Kontakt', 'href' => '#contact' ]
+                [ 'label' => 'Kontakt', 'href' => '/#contact' ]
             ];
         }
         
