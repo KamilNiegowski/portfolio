@@ -34,7 +34,7 @@
         public function testAddCurrencyToDb(): void
         {
             // Tworzy mocka dla metody ConnectApi w kontrolerze
-            $mockedApi = Mockery::mock( 'App\Http\Controllers\Cu[ConnectApi]' );
+            $mockedApi = Mockery::mock( 'App\Http\Controllers\ConnectApi[ConnectApi]' );
             $mockedApi->shouldReceive( 'ConnectApi' )->andReturn( [
                 [ 'code' => 'EUR', 'currency' => 'euro', 'mid' => '4.5' ]
             ] );
