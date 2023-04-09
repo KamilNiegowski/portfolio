@@ -7,8 +7,8 @@
     use Illuminate\Http\Response;
     use Mockery;
     use Tests\TestCase;
-
-
+    
+    
     class CurrencyApiServiceTest extends TestCase
     {
         public function setUp(): void
@@ -34,7 +34,7 @@
         public function testAddCurrencyToDb(): void
         {
             // Tworzy mocka dla metody ConnectApi w kontrolerze
-            $mockedApi = Mockery::mock( 'App\Http\Controllers\CurrencyController[ConnectApi]' );
+            $mockedApi = Mockery::mock( 'App\Http\Controllers\Cu[ConnectApi]' );
             $mockedApi->shouldReceive( 'ConnectApi' )->andReturn( [
                 [ 'code' => 'EUR', 'currency' => 'euro', 'mid' => '4.5' ]
             ] );
@@ -64,7 +64,6 @@
             $mockedController = Mockery::mock( 'App\Http\Controllers\CurrencyController' )->makePartial();
             $mockedController->shouldReceive( 'AddCurrencyToDB' )->andReturn( false );
             $this->app->instance( 'App\Http\Controllers\CurrencyController', $mockedController );
-            
             
             // Tworzy kurs waluty w bazie danych
             $currency = Currency::create( [
