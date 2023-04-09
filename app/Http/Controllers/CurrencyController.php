@@ -16,6 +16,7 @@
         public function AddCurrencyToDB()
         {
             $rates = ConnectApi::ConnectApi( 'https://api.nbp.pl/api/exchangerates/tables/a' );
+            
             foreach ( $rates as $rate ) {
                 $currency = Currency::where( 'currency_code', $rate[ 'code' ] )->first();
                 
