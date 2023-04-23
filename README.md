@@ -30,4 +30,3 @@ Składowe projektu znajdują sie w tablicy skąd są pobierane. Mogą być wyśw
 ## DarkMode
 
 ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/106877506/210299597-e3e5b605-2d1e-4288-bd9e-a33332d4e9c1.gif)
-https://docs.google.com/document/d/1JKgyE9AG7OjzlaGixwnRMyRcIUIkp-Mj_DbA_QzIaUQ/edit
