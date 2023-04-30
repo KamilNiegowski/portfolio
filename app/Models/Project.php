@@ -15,6 +15,7 @@
             'title',
             'github',
             'active',
+            'thumbnail',
             'published_at',
             'user_id',
         ];

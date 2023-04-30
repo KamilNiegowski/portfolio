@@ -15,11 +15,13 @@
                 $table->id();
                 $table->string( 'title' );
                 $table->string( 'github' );
-                $table->boolean( 'active' );
-                $table->datetime( 'published_at' );
+                $table->string( 'thumbnail', 2048 )->nullable();
+                $table->boolean( 'active' )->default( false );
+                $table->datetime( 'published_at' )->nullable();
                 $table->foreignIdFor( User::class, 'user_id' );
                 $table->timestamps();
             } );
+            
         }
         
         /**

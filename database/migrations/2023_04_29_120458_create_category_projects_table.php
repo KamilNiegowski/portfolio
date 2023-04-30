@@ -10,7 +10,7 @@
          */
         public function up(): void
         {
-            Schema::create( 'category_projects', function ( Blueprint $table ) {
+            Schema::create( 'category_project', function ( Blueprint $table ) {
                 $table->id();
                 $table->foreignId( 'category_id' )->references( 'id' )->on( 'categories' )->onDelete( 'cascade' );
                 $table->foreignId( 'project_id' )->references( 'id' )->on( 'projects' )->onDelete( 'cascade' );
@@ -23,6 +23,6 @@
          */
         public function down(): void
         {
-            Schema::dropIfExists( 'category_projects' );
+            Schema::dropIfExists( 'category_project' );
         }
     };
