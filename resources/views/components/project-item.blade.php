@@ -20,6 +20,8 @@
       <h3 class="font-bold text-lg text-dark dark:text-white mb-4">
         {{$project->title}}
       </h3>
+      <span class="text-center">dddddd</span>
+
       <x-button-link :href="$project['github']" target="_blank" variant="outline-primary">Zobacz więcej</x-button-link>
     </div>
   </div>

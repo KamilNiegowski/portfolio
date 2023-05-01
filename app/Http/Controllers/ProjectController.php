@@ -15,7 +15,7 @@
         {
             $projects = Project::query()
                 ->where( 'active', '=', 1 )
-                ->whereDate( 'published_at', '<', Carbon::now() )
+                ->whereDate( 'published_at', '<=', Carbon::now() )
                 ->orderBy( 'published_at', 'desc' )
                 ->paginate();
             
