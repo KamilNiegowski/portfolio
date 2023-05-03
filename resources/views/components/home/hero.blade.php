@@ -33,7 +33,7 @@
         <div class="lg:text-right lg:ml-auto">
           <div class="relative lg:inline-block z-10 pt-11 lg:pt-0">
             <img
-                    src="{{ url('/img/me.webp') }}"
+                    src="{{ url('/img/Kamil_Niegowski.webp') }}"
                     alt="hero"
                     class="max-w-full lg:ml-auto rounded-br-[30px] rounded-tl-[30px]"
             />
