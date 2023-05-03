@@ -29,7 +29,7 @@
                 Lokalizacja
               </h4>
               <p class="text-base text-dark dark:text-slate-200">
-                Poznań1
+                Poznań
               </p>
             </div>
           </div>
