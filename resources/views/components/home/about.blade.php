@@ -44,16 +44,16 @@
             O mnie
           </h2>
           <p class="text-base dark:text-gray-400 mb-8">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-            but also the leap into electronic typesetting, remaining essentially unchanged.
+            Jestem specjalistą SEO, który nieustannie rozwija swoje
+            umiejętności. Oprócz tworzenia i zarządzania
+            strategiami pozycjonowania dla klientów biznesowych,
+            samodzielnie uczę się programowania w PHP w
+            frameworku Laravel. Chcę kontynuować rozwój w tej
+            dziedzinie, aby jeszcze lepiej sprostać potrzebom
+            klientów i dostarczyć im najlepsze rozwiązania.
           </p>
           <p class="text-base dark:text-gray-400 mb-8">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-            but also the leap into electronic typesetting, remaining essentially unchanged.
+           
           </p>
         </div>
       </div>
