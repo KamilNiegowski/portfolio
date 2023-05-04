@@ -53,8 +53,8 @@
               </h4>
               <p class="text-base text-dark dark:text-slate-200">
                 <a class="hover:text-slate-400"
-                   href="mailto:kamil.niegowski01@gmail.com">
-                  kamil.niegowski01@gmail.com</a>
+                   href="mailto:kontakt@kamilniegowski.pl">
+                  kontakt@kamilniegowski.pl</a>
               </p>
             </div>
           </div>
