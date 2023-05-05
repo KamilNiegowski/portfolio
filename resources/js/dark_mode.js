@@ -2,7 +2,7 @@ const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
 // ustaw motyw na podstawie wartości z localStorage (jeśli istnieje)
-if (localStorage.getItem('theme') === 'dark') {
+if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     themeToggleLightIcon.classList.remove('hidden');
     document.documentElement.classList.add('dark');
 } else {

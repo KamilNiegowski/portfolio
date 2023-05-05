@@ -10,6 +10,7 @@
   <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
   <meta name="robots" content="noindex, nofollow">
 
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFJVK8KPDB"></script>
   <script>
@@ -45,5 +46,6 @@
   <x-layout.footer></x-layout.footer>
 </div>
 <script src="{{ Vite::asset('resources/js/app.js') }}"></script>
+{{--<script src="{{ Vite::asset('resources/js/dark_mode.js') }}"></script>--}}
 </body>
 </html>
