@@ -27,7 +27,6 @@ services:
       - meilisearch
       - mailhog
       - selenium
-      -
   mysql:
     image: 'mysql/mysql-server:latest'
     ports:
