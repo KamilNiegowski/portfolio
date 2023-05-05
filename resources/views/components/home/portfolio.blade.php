@@ -5,7 +5,7 @@
             {
               selectedTab:'all',
               activeClasses: 'bg-primary text-white',
-              inactiveClasses: 'text-body-color hover:bg-primary hover:text-white',
+              inactiveClasses: 'text-body-color hover:bg-primary hover:text-white'
         }"
         class="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px]">
   <div class="container">
