@@ -37,7 +37,7 @@
       })(window, document, "clarity", "script", "gyunxlatpp");
   </script>
   <!-- Fonts -->
-  <link href="{{Vite::asset('resources/css/app.css')}}" rel="stylesheet">
+  @vite('resources/css/app.css')
 </head>
 <body class="antialiased text-gray-800 dark:text-white">
 <div class="min-h-screen bg-gray-100 dark:bg-slate-800 pt-24">
@@ -45,7 +45,7 @@
   {{$slot}}
   <x-layout.footer></x-layout.footer>
 </div>
-<script src="{{ Vite::asset('resources/js/app.js') }}"></script>
+@vite('resources/js/app.js')
 {{--<script src="{{ Vite::asset('resources/js/dark_mode.js') }}"></script>--}}
 </body>
 </html>
