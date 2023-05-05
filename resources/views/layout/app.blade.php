@@ -46,6 +46,6 @@
   <x-layout.footer></x-layout.footer>
 </div>
 @vite('resources/js/app.js')
-{{--<script src="{{ Vite::asset('resources/js/dark_mode.js') }}"></script>--}}
+<script src="{{ Vite::asset('resources/js/dark_mode.js') }}"></script>
 </body>
 </html>

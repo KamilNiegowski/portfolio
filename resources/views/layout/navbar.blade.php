@@ -65,6 +65,6 @@
       </div>
     </div>
   </div>
-  @vite('resources/js/dark_mode.js')
+  {{--  @vite('resources/js/dark_mode.js')--}}
 </header>
 <!-- ====== Navbar Section End -->
