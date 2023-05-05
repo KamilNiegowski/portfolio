@@ -27,7 +27,7 @@
           <li class="mb-1">
             <button
                     @click="selectedTab = 'all' "
-                    :class="selectedTab == 'all' ? activeClasses : inactiveClasses "
+                    :class="selectedTab === 'all' ? activeClasses : inactiveClasses "
                     class="inline-block py-2 md:py-3 px-5 lg:px-8 rounded-lg text-base font-semibold text-center transition"
             >
               Wszystkie projekty
