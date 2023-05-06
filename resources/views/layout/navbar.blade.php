@@ -65,18 +65,24 @@
       </div>
     </div>
   </div>
-  
+
   <script>
       const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
       const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
-      // ustaw motyw na podstawie wartości z localStorage (jeśli istnieje)
-      if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          themeToggleLightIcon.classList.remove('hidden');
-          document.documentElement.classList.add('dark');
-      } else {
+      // ustaw motyw na podstawie wartości z localStorage (jeśli istnieje), a jeśli nie ma, to sprawdź preferencję przeglądarki
+      if (localStorage.getItem('theme') === 'light') {
           themeToggleDarkIcon.classList.remove('hidden');
           document.documentElement.classList.remove('dark');
+      } else if (localStorage.getItem('theme') === 'dark') {
+          themeToggleLightIcon.classList.remove('hidden');
+          document.documentElement.classList.add('dark');
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          themeToggleDarkIcon.classList.remove('hidden');
+          document.documentElement.classList.remove('dark');
+      } else {
+          themeToggleLightIcon.classList.remove('hidden');
+          document.documentElement.classList.add('dark');
       }
 
       const themeToggleBtn = document.getElementById('theme-toggle');
