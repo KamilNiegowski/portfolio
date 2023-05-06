@@ -39,12 +39,13 @@
   <!-- Fonts -->
   @vite('resources/css/app.css')
 </head>
-<body class="antialiased text-gray-800 dark:text-white">
-<div class="min-h-screen bg-gray-100 dark:bg-slate-800 pt-24">
+<body class="antialiased text-gray-800 dark:text-white scrollbar scrollbar-morpheus-den">
+<div class="min-h-screen bg-gray-100 dark:bg-slate-800 pt-24 force-overflow">
   <x-layout.navbar></x-layout.navbar>
   {{$slot}}
   <x-layout.footer></x-layout.footer>
 </div>
+
 @vite('resources/js/app.js')
 {{--<script src="{{ Vite::asset('resources/js/dark_mode.js') }}"></script>--}}
 </body>
