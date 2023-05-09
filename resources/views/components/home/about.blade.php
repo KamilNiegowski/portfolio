@@ -28,7 +28,6 @@
                       class="rounded-2xl w-full"
               />
               <x-about-dots></x-about-dots>
-
             </div>
           </div>
         </div>
@@ -43,17 +42,12 @@
           <h2 class="font-bold text-3xl sm:text-4xl dark:text-gray-200 mb-8">
             O mnie
           </h2>
-          <p class="text-base dark:text-gray-400 mb-8">
+          <p class="text-base text-justify dark:text-gray-400 mb-8">
             Jestem specjalistą SEO, który nieustannie rozwija swoje
             umiejętności. Oprócz tworzenia i zarządzania
-            strategiami pozycjonowania dla klientów biznesowych,
-            samodzielnie uczę się programowania w PHP w
-            frameworku Laravel. Chcę kontynuować rozwój w tej
-            dziedzinie, aby jeszcze lepiej sprostać potrzebom
-            klientów i dostarczyć im najlepsze rozwiązania.
-          </p>
-          <p class="text-base dark:text-gray-400 mb-8">
-           
+            strategiami pozycjonowania dla klientów biznesowych, samodzielnie uczę się programowania w języku PHP we
+            frameworku Laravel. Chcę kontynuować rozwój w tej dziedzinie, aby jeszcze lepiej sprostać potrzebom klientów
+            i dostarczyć im najlepsze rozwiązania. Docelowo chciałbym pracować jako PHP Developer.
           </p>
         </div>
       </div>

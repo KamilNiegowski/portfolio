@@ -13,7 +13,7 @@
                   class="max-w-[110px] lg:inline-block"
           />
 
-          <span class="text-xl xl:text-2xl font-bold text-[#0aafff] dark:text-white">KamilNiegowski</span>
+          <p class="text-xl xl:text-2xl font-bold text-[#0aafff] dark:text-white">KamilNiegowski</p>
         </a>
       </div>
       <div class="flex px-4 justify-end items-center w-full">

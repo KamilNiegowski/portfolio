@@ -5,13 +5,12 @@
       <div class="w-full lg:w-5/12 px-4">
         <div class="hero-content">
           <h1 class="text-dark dark:text-white font-bold text-4xl sm:text-[42px] lg:text-[40px] xl:text-[42px] leading-snug mb-6">
-            Nazywam się Kamil<br>
-            Programista samouk
+            Nazywam się<br>
+            Kamil Niegowski
           </h1>
           <p class="text-base mb-8 max-w-[520px]">
-            Jestem studentem na drugim roku informatyki<br>
-            Lubię codziennie rozwijać swoję umiejętności programistyczne
-          </p>
+            Jestem studentem drugiego roku informatyki na specjalności programowanie.<br>
+            Moim głównym zainteresowaniem jest język PHP, który hobbystycznie rozwijam w wolnym czasie.</p>
           <ul class="flex flex-wrap items-center">
             <li>
               <x-button-link href="#portfolio" variant="primary" class="rounded-lg">
