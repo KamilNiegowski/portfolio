@@ -13,7 +13,7 @@
                   class="max-w-[110px] lg:inline-block"
           />
 
-          <span class="text-xl xl:text-2xl font-bold text-[#0aafff] dark:text-white">KamilNiegowski</span>
+          <p class="text-xl xl:text-2xl font-bold text-[#0aafff] dark:text-white">KamilNiegowski</p>
         </a>
       </div>
       <div class="flex px-4 justify-end items-center w-full">
@@ -65,49 +65,43 @@
       </div>
     </div>
   </div>
+
   <script>
       const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
       const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          themeToggleLightIcon.classList.remove('hidden');
-          document.documentElement.classList.add('dark')
-      } else {
+      // ustaw motyw na podstawie wartości z localStorage (jeśli istnieje), a jeśli nie ma, to sprawdź preferencję przeglądarki
+      if (localStorage.getItem('theme') === 'light') {
           themeToggleDarkIcon.classList.remove('hidden');
-          document.documentElement.classList.remove('dark')
+          document.documentElement.classList.remove('dark');
+      } else if (localStorage.getItem('theme') === 'dark') {
+          themeToggleLightIcon.classList.remove('hidden');
+          document.documentElement.classList.add('dark');
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          themeToggleDarkIcon.classList.remove('hidden');
+          document.documentElement.classList.remove('dark');
+      } else {
+          themeToggleLightIcon.classList.remove('hidden');
+          document.documentElement.classList.add('dark');
       }
 
       const themeToggleBtn = document.getElementById('theme-toggle');
 
-
       themeToggleBtn.addEventListener('click', function () {
-
           // toggle icons inside button
           themeToggleDarkIcon.classList.toggle('hidden');
           themeToggleLightIcon.classList.toggle('hidden');
 
-          // if set via local storage previously
-          if (localStorage.getItem('theme')) {
-              if (localStorage.getItem('theme') === 'light') {
-                  document.documentElement.classList.add('dark');
-                  localStorage.setItem('theme', 'dark');
-              } else {
-                  document.documentElement.classList.remove('dark');
-                  localStorage.setItem('theme', 'light');
-              }
-
-              // if NOT set via local storage previously
+          // zmień motyw i zapisz preferencję do localStorage
+          if (document.documentElement.classList.contains('dark')) {
+              document.documentElement.classList.remove('dark');
+              localStorage.setItem('theme', 'light');
           } else {
-              if (document.documentElement.classList.contains('dark')) {
-                  document.documentElement.classList.remove('dark');
-                  localStorage.setItem('theme', 'light');
-              } else {
-                  document.documentElement.classList.add('dark');
-                  localStorage.setItem('theme', 'dark');
-              }
+              document.documentElement.classList.add('dark');
+              localStorage.setItem('theme', 'dark');
           }
-
       });
+
   </script>
 </header>
 <!-- ====== Navbar Section End -->

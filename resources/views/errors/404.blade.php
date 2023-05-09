@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brak strony - 404</title>
+  <title>Brak strony</title>
   <!-- Fonts -->
   <link href="{{Vite::asset('resources/css/app.css')}}" rel="stylesheet">
   <script>
@@ -15,26 +15,24 @@
       console.log(window.matchMedia('(prefers-color-scheme: dark)').matches)
   </script>
 </head>
-<body class="bg-dark py-[40vw]">
-<div class="container mx-auto">
-  <div class="flex">
-    <div class="w-full ">
-      <div class="mx-auto  text-center">
-        <h2
-                class="text-black mb-2 text-[50px] font-bold leading-none dark:text-white sm:text-[80px] md:text-[100px]"
-        >
-          404
-        </h2>
-        <h4 class="text-black dark:text-white mb-3 text-[22px] font-semibold leading-tight ">
-          Oops! Nie ma takiej strony.
-        </h4>
-        <a
-                href="/"
-                class="text-black dark:text-white dark:hover:text-dark hover:text-white hover:bg-black dark:hover:bg-black inline-block rounded-lg border border-black dark:border-white hover:border-black px-8 py-3 text-center text-base font-semibold transition"
-        >
-          Wróć na stronę główna.
-        </a>
-      </div>
+<body class="bg-dark ">
+<div class="container mt-[45vh] ">
+  <div class="w-full ">
+    <div class=" text-center">
+      <h2
+              class="text-black mb-2 text-[50px] font-bold leading-none dark:text-white sm:text-[80px] md:text-[100px]"
+      >
+        404
+      </h2>
+      <h4 class="text-black dark:text-white mb-3 text-[22px] font-semibold leading-tight ">
+        Oops! Nie ma takiej strony.
+      </h4>
+      <a
+              href="/"
+              class="text-black dark:text-white dark:hover:text-dark hover:text-white hover:bg-black dark:hover:bg-black inline-block rounded-lg border border-black dark:border-white hover:border-black px-8 py-3 text-center text-base font-semibold transition"
+      >
+        Wróć na stronę główna.
+      </a>
     </div>
   </div>
 </div>

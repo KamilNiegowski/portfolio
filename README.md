@@ -11,8 +11,8 @@ Now that all the containers are ready, we can go in the browser to the address: 
 
 ## Questions and Improvements
 
-For any question or emprovement please send an e-mail to Kamil
-Niegowski [kamil.niegowski01@gmail.com](mailto:kamil.niegowski01@gmail.com)
+For any question or emprovement please send an e-mail
+to [kamil.niegowski01@gmail.com](mailto:kamil.niegowski01@gmail.com)
 
 # Moja strona wykonana w języku PHP 8.1 we frameworku LARAVEL 9
 
