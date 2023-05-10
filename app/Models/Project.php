@@ -19,10 +19,18 @@
             'published_at',
             'user_id',
         ];
+        protected $casts = [
+            'published_at' => 'datetime'
+        ];
         
         public function user(): BelongsTo
         {
             return $this->belongsTo( User::class );
+        }
+        
+        public function getFormattedDate()
+        {
+            return $this->published_at->format( 'd.m.Y' );
         }
         
         public function categories(): BelongsToMany
