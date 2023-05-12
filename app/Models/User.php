@@ -43,9 +43,19 @@
         protected $casts = [
             'email_verified_at' => 'datetime',
         ];
+        protected $emailList = [
+            'gmail.com',
+            'kamilniegowski.pl'
+        ];
         
         public function canAccessFilament(): bool
         {
-            return true;
+            return in_array( $this->getEmailDomain( $this->email ), $this->emailList );
+        }
+        
+        public function getEmailDomain( $email )
+        {
+            $array = explode( '@', $email );
+            return $array[ 1 ];
         }
     }
