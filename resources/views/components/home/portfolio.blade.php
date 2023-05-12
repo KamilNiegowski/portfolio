@@ -13,7 +13,7 @@
       <div class="w-full px-4">
         <div class="text-center mx-auto mb-[60px] max-w-[510px]">
           <h2 class="font-bold text-3xl sm:text-4xl md:text-[40px] text-dark dark:text-white mb-4">
-            Moje aktualne projekty1
+            Moje aktualne projekty
           </h2>
           <p class="text-base text-body-color">
             Najwięcej uczysz się budując projekty.
@@ -47,8 +47,11 @@
       </div>
     </div>
     <div class="flex flex-wrap -mx-4">
-      @foreach($projects as $project)
-        <x-project-item :project="$project"></x-project-item>
+      @foreach($items as $item)
+        <x-portfolio-item :title="$item['title']"
+                          :categories="$item['category']"
+                          :image="$item['image']"
+                          :github="$item['github']"></x-portfolio-item>
       @endforeach
     </div>
   </div>
