@@ -13,7 +13,7 @@
       <div class="w-full px-4">
         <div class="text-center mx-auto mb-[60px] max-w-[510px]">
           <h2 class="font-bold text-3xl sm:text-4xl md:text-[40px] text-dark dark:text-white mb-4">
-            Moje aktualne projekt
+            Moje aktualne projekty
           </h2>
           <p class="text-base text-body-color">
             Najwięcej uczysz się budując projekty.
