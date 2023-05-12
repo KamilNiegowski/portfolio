@@ -47,11 +47,8 @@
       </div>
     </div>
     <div class="flex flex-wrap -mx-4">
-      @foreach($items as $item)
-        <x-portfolio-item :title="$item['title']"
-                          :categories="$item['category']"
-                          :image="$item['image']"
-                          :github="$item['github']"></x-portfolio-item>
+      @foreach($projects as $project)
+        <x-project-item :project="$project"></x-project-item>
       @endforeach
     </div>
   </div>
