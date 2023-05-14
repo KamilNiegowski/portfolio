@@ -30,6 +30,8 @@
                         ->required()
                         ->maxLength( 2048 ),
                     Forms\Components\MarkdownEditor::make( 'content' ),
+                    Forms\Components\ColorPicker::make( 'background_color_dark' ),
+                    Forms\Components\ColorPicker::make( 'background_color_light' ),
                     Forms\Components\Toggle::make( 'active' )
                         ->required()
                 ] )->columns( 1 );

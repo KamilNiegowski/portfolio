@@ -25,7 +25,7 @@
                      class="absolute bottom-14 left-10 right-10 "
                      variant="outline-primary"> Zobacz więcej
       </x-button-link>
-      <p class="absolute bottom-3 right-0 text-right text-[16px] text-body-color">
+      <p class="absolute bottom-3 right-2 text-right text-[16px] text-body-color">
         Opublikowano: {{$project->getFormattedDate()}}</p>
     </div>
   </div>

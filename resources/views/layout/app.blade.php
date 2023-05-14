@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+@php use App\Models\TextWidget; @endphp
+        <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="">
 <head>
 
@@ -38,6 +39,40 @@
   </script>
   <!-- Fonts -->
   @vite('resources/css/app.css')
+
+  <style>
+      .dark #hero-text {
+          background-color: {{ TextWidget::getBackgroundColorDark('hero-text') }};
+      }
+
+      .dark #about-me {
+          background-color: {{ TextWidget::getBackgroundColorDark('about-me') }};
+      }
+
+      .dark #portfolio {
+          background-color: {{ TextWidget::getBackgroundColorDark('portfolio') }};
+      }
+
+      .dark #contact-me {
+          background-color: {{ TextWidget::getBackgroundColorDark('contact-me') }};
+      }
+
+      #hero-text {
+          background-color: {{ TextWidget::getBackgroundColorLight('hero-text') }};
+      }
+
+      #about-me {
+          background-color: {{ TextWidget::getBackgroundColorLight('about-me') }};
+      }
+
+      #portfolio {
+          background-color: {{ TextWidget::getBackgroundColorLight('portfolio') }};
+      }
+
+      #contact-me {
+          background-color: {{ TextWidget::getBackgroundColorLight('contact-me') }};
+      }
+  </style>
 </head>
 <body class="antialiased text-gray-800 dark:text-white scrollbar scrollbar-morpheus-den">
 <div class="min-h-screen bg-gray-100 dark:bg-slate-800 pt-24 force-overflow">
@@ -45,8 +80,6 @@
   {{$slot}}
   <x-layout.footer></x-layout.footer>
 </div>
-
 @vite('resources/js/app.js')
-{{--<script src="{{ Vite::asset('resources/js/dark_mode.js') }}"></script>--}}
 </body>
 </html>
