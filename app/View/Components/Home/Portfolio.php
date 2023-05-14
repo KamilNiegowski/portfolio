@@ -6,7 +6,7 @@
     use Illuminate\Contracts\View\View;
     use Illuminate\Support\Arr;
     use Illuminate\View\Component;
-
+    
     class Portfolio extends Component
     {
         public array $items = [];
@@ -21,13 +21,13 @@
         {
             $this->items = [
                 [
-                    'category' => [ 'Laravel', 'Tailwind.css', 'PHP' ],
+                    'category' => [ 'PHP' ],
                     'title' => 'Strona portfolio w Laravel',
                     'image' => url( '/img/laravel.webp' ),
                     'github' => 'https://github.com/KamilNiegowski/portfolio'
                 ],
                 [
-                    'category' => [ 'TotalCommander', 'C#' ],
+                    'category' => [ 'C#' ],
                     'title' => "A'la TotalCommander",
                     'image' => url( '/img/total_commander.webp' ),
                     'github' => 'https://github.com/KamilNiegowski/TotalCommander'
@@ -39,7 +39,7 @@
                     'github' => 'https://github.com/KamilNiegowski/jQuery_accordion'
                 ],
                 [
-                    'category' => [ 'C++', 'Arduino' ],
+                    'category' => [ 'C++' ],
                     'title' => 'Radar wykonany w Arduino',
                     'image' => url( '/img/arduino_radar.webp' ),
                     'github' => 'https://github.com/KamilNiegowski/radar_arduino'
