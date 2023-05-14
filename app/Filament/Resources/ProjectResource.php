@@ -57,14 +57,10 @@
                 ->columns( [
                     Tables\Columns\ImageColumn::make( 'thumbnail' ),
                     Tables\Columns\TextColumn::make( 'title' ),
-//                    Tables\Columns\TextColumn::make( 'github' ),
                     Tables\Columns\IconColumn::make( 'active' )
                         ->boolean(),
                     Tables\Columns\TextColumn::make( 'published_at' )
                         ->dateTime(),
-//                    Tables\Columns\TextColumn::make( 'user.name' ),
-//                    Tables\Columns\TextColumn::make( 'created_at' )
-//                        ->dateTime(),
                     Tables\Columns\TextColumn::make( 'updated_at' )
                         ->dateTime(),
                 ] )
@@ -72,7 +68,6 @@
                     //
                 ] )
                 ->actions( [
-                    Tables\Actions\ViewAction::make(),
                     Tables\Actions\EditAction::make(),
                     Tables\Actions\DeleteAction::make(),
                 ] )
@@ -93,7 +88,6 @@
             return [
                 'index' => Pages\ListProjects::route( '/' ),
                 'create' => Pages\CreateProject::route( '/create' ),
-                'view' => Pages\ViewProject::route( '/{record}' ),
                 'edit' => Pages\EditProject::route( '/{record}/edit' ),
             ];
         }
