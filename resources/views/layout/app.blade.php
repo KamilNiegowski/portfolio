@@ -42,35 +42,35 @@
 
   <style>
       .dark #hero-text {
-          background-color: {{ TextWidget::getBackgroundColorDark('hero-text') }};
+          background-color: {{ TextWidget::getBackgroundColorDarkTheme('hero-text') }};
       }
 
       .dark #about-me {
-          background-color: {{ TextWidget::getBackgroundColorDark('about-me') }};
+          background-color: {{ TextWidget::getBackgroundColorDarkTheme('about-me') }};
       }
 
       .dark #portfolio {
-          background-color: {{ TextWidget::getBackgroundColorDark('portfolio') }};
+          background-color: {{ TextWidget::getBackgroundColorDarkTheme('portfolio') }};
       }
 
       .dark #contact-me {
-          background-color: {{ TextWidget::getBackgroundColorDark('contact-me') }};
+          background-color: {{ TextWidget::getBackgroundColorDarkTheme('contact-me') }};
       }
 
       #hero-text {
-          background-color: {{ TextWidget::getBackgroundColorLight('hero-text') }};
+          background-color: {{ TextWidget::getBackgroundColorLightTheme('hero-text') }};
       }
 
       #about-me {
-          background-color: {{ TextWidget::getBackgroundColorLight('about-me') }};
+          background-color: {{ TextWidget::getBackgroundColorLightTheme('about-me') }};
       }
 
       #portfolio {
-          background-color: {{ TextWidget::getBackgroundColorLight('portfolio') }};
+          background-color: {{ TextWidget::getBackgroundColorLightTheme('portfolio') }};
       }
 
       #contact-me {
-          background-color: {{ TextWidget::getBackgroundColorLight('contact-me') }};
+          background-color: {{ TextWidget::getBackgroundColorLightTheme('contact-me') }};
       }
   </style>
 </head>
