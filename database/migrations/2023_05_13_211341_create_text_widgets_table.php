@@ -15,8 +15,8 @@
                 $table->string( 'key' )->unique();
                 $table->string( 'image', 2048 )->nullable();
                 $table->string( 'title', 2048 );
-                $table->string( 'background_color_dark', 64 )->nullable();
-                $table->string( 'background_color_light', 64 )->nullable();
+                $table->string( 'background_color_dark_theme', 64 )->nullable();
+                $table->string( 'background_color_light_theme', 64 )->nullable();
                 $table->longText( 'content' )->nullable();
                 $table->boolean( 'active' );
                 $table->timestamps();

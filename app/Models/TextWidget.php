@@ -16,8 +16,8 @@
             'title',
             'content',
             'active',
-            'background_color_dark',
-            'background_color_light',
+            'background_color_dark_theme',
+            'background_color_light_theme',
         ];
         
         public static function getTitle( string $key ): string
@@ -65,7 +65,7 @@
             return '';
         }
         
-        public static function getBackgroundColorDark( string $key ): string
+        public static function getBackgroundColorDarkTheme( string $key ): string
         {
             $widget = Cache::get( 'text-widget-' . $key, function () use ( $key ) {
                 return TextWidget::query()
@@ -74,13 +74,13 @@
                     ->first();
             } );
             if ( $widget ) {
-                return $widget->background_color_dark;
+                return $widget->background_color_dark_theme;
             }
             
             return '';
         }
         
-        public static function getBackgroundColorLight( string $key ): string
+        public static function getBackgroundColorLightTheme( string $key ): string
         {
             $widget = Cache::get( 'text-widget-' . $key, function () use ( $key ) {
                 return TextWidget::query()
@@ -89,7 +89,7 @@
                     ->first();
             } );
             if ( $widget ) {
-                return $widget->background_color_light;
+                return $widget->background_color_light_theme;
             }
             
             return '';
