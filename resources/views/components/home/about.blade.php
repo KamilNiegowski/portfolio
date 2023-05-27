@@ -1,5 +1,6 @@
-<!-- ====== About Section Start-->
-<section id="about" class="dark:bg-slate-800 pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden">
+@php use App\Models\TextWidget; @endphp
+        <!-- ====== About Section Start-->
+<section id="about-me" class="dark:bg-slate-800 pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden">
   <div class="container">
     <div class="flex flex-wrap justify-between items-center -mx-4">
       <div class="w-full lg:w-6/12 px-4">
@@ -40,14 +41,10 @@
                         </blockquote>
                     </span>
           <h2 class="font-bold text-3xl sm:text-4xl dark:text-gray-200 mb-8">
-            O mnie
+            {{TextWidget::getTitle('about-me')}}
           </h2>
           <p class="text-base text-justify dark:text-gray-400 mb-8">
-            Jestem specjalistą SEO, który nieustannie rozwija swoje
-            umiejętności. Oprócz tworzenia i zarządzania
-            strategiami pozycjonowania dla klientów biznesowych, samodzielnie uczę się programowania w języku PHP we
-            frameworku Laravel. Chcę kontynuować rozwój w tej dziedzinie, aby jeszcze lepiej sprostać potrzebom klientów
-            i dostarczyć im najlepsze rozwiązania. Docelowo chciałbym pracować jako PHP Developer.
+            {!! TextWidget::getContent('about-me') !!}
           </p>
         </div>
       </div>

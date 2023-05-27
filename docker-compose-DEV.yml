@@ -19,7 +19,7 @@ services:
       - meilisearch
       - mailhog
   mysql:
-    container_name: mysql
+    container_name: mysql_DB
     restart: unless-stopped
     image: 'mysql/mysql-server:latest'
     ports:

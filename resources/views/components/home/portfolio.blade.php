@@ -1,4 +1,5 @@
-<!-- ====== Portfolio Section Start-->
+@php use App\Models\TextWidget; @endphp
+        <!-- ====== Portfolio Section Start-->
 <section
         id="portfolio"
         x-data="
@@ -13,11 +14,9 @@
       <div class="w-full px-4">
         <div class="text-center mx-auto mb-[60px] max-w-[510px]">
           <h2 class="font-bold text-3xl sm:text-4xl md:text-[40px] text-dark dark:text-white mb-4">
-            Moje aktualne projekty
-          </h2>
+            {{TextWidget::getTitle('portfolio')}}          </h2>
           <p class="text-base text-body-color">
-            Najwięcej uczysz się budując projekty.
-          </p>
+            {{TextWidget::getContent('portfolio')}}          </p>
         </div>
       </div>
     </div>
@@ -47,11 +46,8 @@
       </div>
     </div>
     <div class="flex flex-wrap -mx-4">
-      @foreach($items as $item)
-        <x-portfolio-item :title="$item['title']"
-                          :categories="$item['category']"
-                          :image="$item['image']"
-                          :github="$item['github']"></x-portfolio-item>
+      @foreach($projects as $project)
+        <x-project-item :project="$project"></x-project-item>
       @endforeach
     </div>
   </div>

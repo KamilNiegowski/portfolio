@@ -1,16 +1,15 @@
-<!-- ====== Hero Section Start-->
-<div class="relative pt-[60px] lg:pt-[80px] pb-[110px] bg-white dark:bg-slate-800">
+@php use App\Models\TextWidget; @endphp
+        <!-- ====== Hero Section Start-->
+<div id="hero-text" class="relative pt-[60px] lg:pt-[80px] pb-[110px] ">
   <div class="container">
     <div class="flex flex-wrap -mx-4">
       <div class="w-full lg:w-5/12 px-4">
         <div class="hero-content">
-          <h1 class="text-dark dark:text-white font-bold text-4xl sm:text-[42px] lg:text-[40px] xl:text-[42px] leading-snug mb-6">
-            Nazywam się<br>
-            Kamil Niegowski
+          <h1 class="text-dark dark:text-white font-bold text-4xl sm:text-[42px] lg:text-[40px] xl:text-[42px] max-w-[350px] leading-snug mb-6">
+            {{TextWidget::getTitle('hero-text')}}
           </h1>
           <p class="text-base mb-8 max-w-[520px]">
-            Jestem studentem drugiego roku informatyki na specjalności programowanie.<br>
-            Moim głównym zainteresowaniem jest język PHP, który hobbystycznie rozwijam w wolnym czasie.</p>
+            {!! TextWidget::getContent('hero-text') !!}</p>
           <ul class="flex flex-wrap items-center">
             <li>
               <x-button-link href="#portfolio" variant="primary" class="rounded-lg">
@@ -32,7 +31,7 @@
         <div class="lg:text-right lg:ml-auto">
           <div class="relative lg:inline-block z-10 pt-11 lg:pt-0">
             <img
-                    src="{{ url('/img/Kamil_Niegowski.webp') }}"
+                    src="storage/{{ TextWidget::getImage('hero-text')}}"
                     alt="hero"
                     class="max-w-full lg:ml-auto rounded-br-[30px] rounded-tl-[30px]"
             />

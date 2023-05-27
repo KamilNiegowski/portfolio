@@ -69,7 +69,7 @@
         |
         */
         
-        'timezone' => 'Europe/Warsaw',
+        'timezone' => 'UTC',
         
         /*
         |--------------------------------------------------------------------------
@@ -82,7 +82,7 @@
         |
         */
         
-        'locale' => 'pl',
+        'locale' => 'en',
         
         /*
         |--------------------------------------------------------------------------
@@ -181,6 +181,7 @@
             Illuminate\Translation\TranslationServiceProvider::class,
             Illuminate\Validation\ValidationServiceProvider::class,
             Illuminate\View\ViewServiceProvider::class,
+            
             
             /*
              * Package Service Providers...

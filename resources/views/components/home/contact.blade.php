@@ -1,14 +1,15 @@
-<!-- ====== Contact Section Start-->
-<section id="contact" class="bg-gray dark:bg-primary py-20 lg:pt-[120px] overflow-hidden relative z-10">
+@php use App\Models\TextWidget; @endphp
+        <!-- ====== Contact Section Start-->
+<section id="contact-me" class="bg-gray dark:bg-primary py-20 lg:pt-[120px] overflow-hidden relative z-10">
   <div class="container">
     <div class="flex flex-wrap lg:justify-between -mx-4">
       <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
         <div class="max-w-[570px] mb-12 lg:mb-0">
           <h2 class="text-dark dark:text-slate-100 mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-            Formularz kontaktowy
+            {{TextWidget::getTitle('contact-me')}}
           </h2>
           <p class="text-base font-semibold text-dark dark:text-gray-200 leading-relaxed mb-9">
-            Jeśli chcesz się ze mną skontaktować, <br>skorzystaj z formularza obok.
+            {!! TextWidget::getContent('contact-me') !!}
           </p>
           <div class="flex mb-8 max-w-[370px] w-full">
             <div
