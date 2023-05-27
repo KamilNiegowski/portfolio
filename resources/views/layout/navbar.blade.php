@@ -1,4 +1,5 @@
 <!-- ====== Navbar Section Start -->
+@php use App\Models\Menu; @endphp
 <header
         x-data="{navbarOpen: false}"
         class="fixed left-0 top-0 z-50 bg-white w-full flex items-center shadow-md dark:bg-slate-900 h-24"
@@ -56,8 +57,51 @@
                   ></path>
                 </svg>
               </button>
-              @foreach($navigationItems as $item)
-                <x-layout.navbar-item :href="$item['href']">{{ $item['label'] }}</x-layout.navbar-item>
+              <style>
+                  .submenu {
+                      display: none;
+                      position: absolute;
+                      top: 100%;
+                      left: 30px;
+                      z-index: 999;
+                      background-color: black;
+                      padding: 10px;
+                  }
+
+                  .menu-item {
+                      position: relative;
+                  }
+
+                  .submenu-item {
+                      white-space: nowrap;
+                  }
+
+                  .menu-item:hover .submenu {
+                      display: block;
+                  }
+
+              </style>
+              @foreach(App\Models\Menu::tree() as $menu)
+                <li class="menu-item">
+                  <a href="{{ $menu->slug }}"
+                     class="text-xs font-medium text-dark py-2 flex hover:text-primary dark:text-white lg:inline-flex lg:ml-6 xl:ml-12">
+                    {{ $menu->menu_title }}
+                  </a>
+                  @if($menu->children->count() > 0)
+                    <div class="submenu">
+                      <ul>
+                        @foreach($menu->children as $submenu)
+                          <li>
+                            <a href="{{ $submenu->slug }}"
+                               class="text-xs font-medium text-dark py-2 flex hover:text-primary dark:text-white lg:inline-flex submenu-item">
+                              {{ $submenu->menu_title }}
+                            </a>
+                          </li>
+                        @endforeach
+                      </ul>
+                    </div>
+                  @endif
+                </li>
               @endforeach
             </ul>
           </nav>
