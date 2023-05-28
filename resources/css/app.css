@@ -26,6 +26,25 @@
     scrollbar-color: #330867 #F5F5F5;
 }
 
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 30px;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.submenu-item {
+    white-space: nowrap;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
 body {
     font-family: "Inter", sans-serif;
 }
