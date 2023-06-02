@@ -2,7 +2,7 @@
 @php use App\Models\Menu; @endphp
 <header
         x-data="{navbarOpen: false}"
-        class="fixed left-0 top-0 z-50 bg-white w-full flex items-center shadow-md dark:bg-slate-900 h-24"
+        class="left-0 z-50 bg-white w-full flex items-center shadow-md dark:bg-slate-900 h-24"
 >
   <div class="container">
     <div class="flex -mx-4 items-center justify-between relative">
@@ -58,7 +58,7 @@
                 </svg>
               </button>
               @foreach(Menu::tree() as $menu)
-                @include('layout.navbar-item', ['menu' => $menu])
+                @include('layouts.navbar-item', ['menu' => $menu])
               @endforeach
             </ul>
           </nav>

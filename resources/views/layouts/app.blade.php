@@ -76,7 +76,7 @@
 
   </style>
 </head>
-<body class="antialiased h-full bg-gray-200 dark:bg-gray-800 flex flex-col text-gray-800 dark:text-white dark:bg-slate-700 scrollbar scrollbar-morpheus-den">
+<body class="antialiased h-full flex flex-col text-gray-800 dark:text-white dark:bg-slate-700 scrollbar scrollbar-morpheus-den">
 <x-layout.navbar></x-layout.navbar>
 {{$slot}}
 <x-layout.footer></x-layout.footer>
