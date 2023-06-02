@@ -216,14 +216,14 @@
         | Layout
         |--------------------------------------------------------------------------
         |
-        | This is the configuration for the general layout of the admin panel.
+        | This is the configuration for the general layouts of the admin panel.
         |
         | You may configure the max content width from `xl` to `7xl`, or `full`
         | for no max width.
         |
         */
         
-        'layout' => [
+        'layouts' => [
             'actions' => [
                 'modal' => [
                     'actions' => [

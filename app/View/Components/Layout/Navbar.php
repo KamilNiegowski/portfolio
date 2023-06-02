@@ -5,7 +5,7 @@
     use Closure;
     use Illuminate\Contracts\View\View;
     use Illuminate\View\Component;
-
+    
     class Navbar extends Component
     {
         public array $navigationItems = [];
@@ -33,6 +33,6 @@
          */
         public function render()
         {
-            return view( 'layout.navbar' );
+            return view( 'layouts.navbar' );
         }
     }

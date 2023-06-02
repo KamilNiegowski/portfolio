@@ -1,6 +1,6 @@
 @php use App\Models\TextWidget; @endphp
         <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class=" h-full">
 <head>
 
   <meta charset="utf-8">
@@ -72,14 +72,14 @@
       #contact-me {
           background-color: {{ TextWidget::getBackgroundColorLightTheme('contact-me') }};
       }
+
+
   </style>
 </head>
-<body class="antialiased text-gray-800 dark:text-white scrollbar scrollbar-morpheus-den">
-<div class="min-h-screen bg-gray-100 dark:bg-slate-800 pt-24 force-overflow">
-  <x-layout.navbar></x-layout.navbar>
-  {{$slot}}
-  <x-layout.footer></x-layout.footer>
-</div>
+<body class="antialiased h-full flex flex-col text-gray-800 dark:text-white dark:bg-slate-700 scrollbar scrollbar-morpheus-den">
+<x-layout.navbar></x-layout.navbar>
+{{$slot}}
+<x-layout.footer></x-layout.footer>
 @vite('resources/js/app.js')
 </body>
 </html>
