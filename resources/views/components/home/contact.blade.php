@@ -1,6 +1,6 @@
 @php use App\Models\TextWidget; @endphp
         <!-- ====== Contact Section Start-->
-<section id="contact-me" class="bg-gray dark:bg-primary py-20 lg:pt-[120px] overflow-hidden relative z-10">
+<section id="contact-me" class="py-20 lg:pt-[120px] relative z-10">
   <div class="container">
     <div class="flex flex-wrap lg:justify-between -mx-4">
       <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
