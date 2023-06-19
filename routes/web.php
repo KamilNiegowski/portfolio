@@ -20,5 +20,6 @@
     } );
     Route::post( '/contact/submit', [ ContactController::class, 'submit' ] );
     Route::get( '/kursy-walut', [ CurrencyController::class, 'ViewCurrency' ] );
+    Route::get( '/blog', [] );
     
   
