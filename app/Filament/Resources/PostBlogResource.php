@@ -3,7 +3,6 @@
     namespace App\Filament\Resources;
     
     use App\Filament\Resources\PostBlogResource\Pages;
-    use App\Filament\Resources\PostBlogResource\RelationManagers;
     use App\Models\PostBlog;
     use Closure;
     use Filament\Forms;
@@ -37,18 +36,23 @@
                                         ->required()
                                         ->maxLength( 2048 ),
                                 ] ),
-                            Forms\Components\FileUpload::make( 'thumbnail' ),
                             Forms\Components\RichEditor::make( 'body' )
                                 ->required(),
+                            Forms\Components\DateTimePicker::make( 'published_at' )
+                                ->required()
+                                ->default( date( 'Y-m-d H:i:s' ) ),
                             Forms\Components\Toggle::make( 'active' )
                                 ->required(),
-                            Forms\Components\DateTimePicker::make( 'published_at' )
-                                ->required(),
+                        ] )->columnSpan( 7 ),
+                    Forms\Components\Card::make()
+                        ->schema( [
+                            Forms\Components\FileUpload::make( 'thumbnail' ),
                             Forms\Components\Select::make( 'category_id' )
                                 ->multiple()
-                                ->relationship( 'categories', 'title' )
+                                ->relationship( 'category_blogs', 'title' )
                                 ->required(),
-                        ] ), ] );
+                        ] )->columnSpan( 3 )
+                ] )->columns( 10 );
         }
         
         public static function table( Table $table ): Table

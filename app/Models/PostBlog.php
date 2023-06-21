@@ -4,6 +4,7 @@
     
     use Illuminate\Database\Eloquent\Factories\HasFactory;
     use Illuminate\Database\Eloquent\Model;
+    use Illuminate\Database\Eloquent\Relations\BelongsToMany;
     
     class PostBlog extends Model
     {
@@ -24,7 +25,7 @@
             return $this->belongsTo( User::class );
         }
         
-        public function categories()
+        public function category_blogs(): BelongsToMany
         {
             return $this->belongsToMany( CategoryBlog::class );
         }

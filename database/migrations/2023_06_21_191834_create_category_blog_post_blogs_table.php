@@ -10,10 +10,10 @@
          */
         public function up(): void
         {
-            Schema::create( 'category_post_blogs', function ( Blueprint $table ) {
+            Schema::create( 'category_blog_post_blog', function ( Blueprint $table ) {
                 $table->id();
-                $table->foreignId( 'category_id' )->references( 'id' )->on( 'category_blogs' )->onDelete( 'cascade' );
-                $table->foreignId( 'post_id' )->references( 'id' )->on( 'post_blogs' )->onDelete( 'cascade' );
+                $table->foreignId( 'category_blog_id' )->references( 'id' )->on( 'category_blogs' )->onDelete( 'cascade' );
+                $table->foreignId( 'post_blog_id' )->references( 'id' )->on( 'post_blogs' )->onDelete( 'cascade' );
                 $table->timestamps();
             } );
         }
@@ -23,6 +23,6 @@
          */
         public function down(): void
         {
-            Schema::dropIfExists( 'category_post_blogs' );
+            Schema::dropIfExists( 'category_blog_post_blogs' );
         }
     };

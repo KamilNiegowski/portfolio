@@ -38,7 +38,6 @@
                             Forms\Components\Toggle::make( 'active' )
                                 ->required(),
                         ] )->columnSpan( 8 ),
-                    
                     Forms\Components\Card::make()
                         ->schema( [
                             Forms\Components\FileUpload::make( 'thumbnail' )

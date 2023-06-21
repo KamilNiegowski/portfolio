@@ -12,7 +12,7 @@
         
         protected $fillable = [
             'title',
-            'slug',
+            'slug'
         ];
         
         public function projects(): BelongsToMany
