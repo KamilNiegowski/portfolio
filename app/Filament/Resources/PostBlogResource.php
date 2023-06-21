@@ -24,27 +24,31 @@
         {
             return $form
                 ->schema( [
-                    Forms\Components\TextInput::make( 'title' )
-                        ->required()
-                        ->maxLength( 2048 )->reactive()
-                        ->afterStateUpdated( function ( Closure $set, $state ) {
-                            $set( 'slug', Str::slug( $state ) );
-                        } ),
-                    Forms\Components\TextInput::make( 'slug' )
-                        ->required()
-                        ->maxLength( 2048 ),
-                    Forms\Components\FileUpload::make( 'thumbnail' )
-                        ->preserveFilenames(),
-                    Forms\Components\Textarea::make( 'body' )
-                        ->required(),
-                    Forms\Components\Toggle::make( 'active' )
-                        ->required(),
-                    Forms\Components\DateTimePicker::make( 'published_at' )
-                        ->required(),
-                    Forms\Components\Select::make( 'user_id' )
-                        ->relationship( 'user', 'name' )
-                        ->required(),
-                ] );
+                    Forms\Components\Card::make()
+                        ->schema( [
+                            Forms\Components\Grid::make( 2 )
+                                ->schema( [ Forms\Components\TextInput::make( 'title' )
+                                    ->required()
+                                    ->maxLength( 2048 )->reactive()
+                                    ->afterStateUpdated( function ( Closure $set, $state ) {
+                                        $set( 'slug', Str::slug( $state ) );
+                                    } ),
+                                    Forms\Components\TextInput::make( 'slug' )
+                                        ->required()
+                                        ->maxLength( 2048 ),
+                                ] ),
+                            Forms\Components\FileUpload::make( 'thumbnail' ),
+                            Forms\Components\RichEditor::make( 'body' )
+                                ->required(),
+                            Forms\Components\Toggle::make( 'active' )
+                                ->required(),
+                            Forms\Components\DateTimePicker::make( 'published_at' )
+                                ->required(),
+                            Forms\Components\Select::make( 'category_id' )
+                                ->multiple()
+                                ->relationship( 'categories', 'title' )
+                                ->required(),
+                        ] ), ] );
         }
         
         public static function table( Table $table ): Table
