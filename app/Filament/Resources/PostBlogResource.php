@@ -59,16 +59,11 @@
         {
             return $table
                 ->columns( [
+                    Tables\Columns\ImageColumn::make( 'thumbnail' ),
                     Tables\Columns\TextColumn::make( 'title' ),
-                    Tables\Columns\TextColumn::make( 'slug' ),
-                    Tables\Columns\TextColumn::make( 'thumbnail' ),
-                    Tables\Columns\TextColumn::make( 'body' ),
                     Tables\Columns\IconColumn::make( 'active' )
                         ->boolean(),
                     Tables\Columns\TextColumn::make( 'published_at' )
-                        ->dateTime(),
-                    Tables\Columns\TextColumn::make( 'user_id' ),
-                    Tables\Columns\TextColumn::make( 'created_at' )
                         ->dateTime(),
                     Tables\Columns\TextColumn::make( 'updated_at' )
                         ->dateTime(),
@@ -77,7 +72,6 @@
                     //
                 ] )
                 ->actions( [
-                    Tables\Actions\ViewAction::make(),
                     Tables\Actions\EditAction::make(),
                     Tables\Actions\DeleteAction::make(),
                 ] )
