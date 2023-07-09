@@ -2,7 +2,7 @@
     
     use App\Http\Controllers\ContactController;
     use App\Http\Controllers\CurrencyController;
-    use App\Http\Controllers\ProjectController;
+    use App\Http\Controllers\PostBlogController;
     use Illuminate\Support\Facades\Route;
     
     /*
@@ -21,6 +21,6 @@
     } );
     Route::post( '/contact/submit', [ ContactController::class, 'submit' ] );
     Route::get( '/kursy-walut', [ CurrencyController::class, 'ViewCurrency' ] );
-    Route::get( '/blog', [ ProjectController::class, 'index' ] );
+    Route::get( '/blog', [ PostBlogController::class, 'index' ] )->name( 'components.blog.blog' );
     
   

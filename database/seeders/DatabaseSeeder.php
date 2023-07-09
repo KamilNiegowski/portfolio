@@ -1,24 +1,25 @@
 <?php
-
-namespace Database\Seeders;
-
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-
-class DatabaseSeeder extends Seeder
-{
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
-    public function run()
+    
+    namespace Database\Seeders;
+    
+    // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+    use App\Models\PostBlog;
+    use Illuminate\Database\Seeder;
+    
+    class DatabaseSeeder extends Seeder
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        /**
+         * Seed the application's database.
+         *
+         * @return void
+         */
+        public function run()
+        {
+            PostBlog::factory( 30 )->create();
+            
+            // \App\Models\User::factory()->create([
+            //     'name' => 'Test User',
+            //     'email' => 'test@example.com',
+            // ]);
+        }
     }
-}
